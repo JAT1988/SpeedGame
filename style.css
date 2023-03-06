@@ -1,0 +1,161 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Eater", cursive;
+}
+
+html {
+  background: url(assets/zombieBG.jpeg) no-repeat center center fixed;
+  background-size: cover;
+}
+
+h1 {
+  color: #0dff00;
+  text-shadow: 4px 4px 8px #ff0000;
+  text-align: center;
+  font-size: 5.5em;
+  padding: 15px;
+}
+
+h2 {
+  color: #0dff00;
+  text-shadow: 4px 4px 8px #ff0000;
+  text-align: center;
+  font-size: 3em;
+  padding: 10px;
+  margin-top: 2vh;
+}
+
+h3 {
+  color: #0dff00;
+  text-shadow: 4px 4px 8px #ff0000;
+  text-align: center;
+  font-size: 2em;
+  padding: 10px;
+}
+
+.start {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+#startbtn,
+#stopbtn {
+  background-color: #0dff00;
+  color: #ff0000;
+  border: none;
+  font-size: 1.4rem;
+  border-radius: 10px;
+  height: 4rem;
+  width: 10rem;
+}
+
+#startbtn:hover,
+#stopbtn:hover {
+  cursor: crosshair;
+  background-color: #ff0000;
+  color: #0dff00;
+  content: "Don't get bit!";
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.9);
+}
+
+.modal {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  background-image: linear-gradient(rgb(0, 251, 255), rgb(0, 0, 0));
+  padding: 5rem 5rem;
+  margin-bottom: 6rem;
+  border-radius: 10px;
+}
+
+.closebtn {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 10px;
+  padding: 1rem 1rem;
+  background-color: #0dff00;
+  color: #ff0000;
+  font-size: 1.3em;
+  border-radius: 50px;
+  border: none;
+}
+
+.closebtn:hover{
+  cursor: crosshair;
+  box-shadow:4px 4px 8px #ff0000;
+  background-color: #0bd700;
+  border: black;
+}
+
+.hide {
+  display: none;
+}
+
+.modal.kills {
+  font-size: 2rem;
+}
+
+#circle1.active {
+  background-image: url(assets/zombie1.jpeg);
+}
+
+#circle2.active {
+  background-image: url(assets/zombie2.jpeg);
+}
+
+#circle3.active {
+  background-image: url(assets/zombie3.jpeg);
+}
+
+#circle4.active {
+  background-image: url(assets/zombie4.jpeg);
+}
+
+
+.overlord_circles {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 60px;
+  flex-wrap: wrap;
+  margin-top: 8vh;
+}
+
+.circle_img {
+  width: 230px;
+  height: 230px;
+  display: flex;
+  border-radius: 50%;
+  padding: 20px;
+  background-position: center center;
+  background-size: cover;
+}
+
+.circle_img:hover {
+  box-shadow: 6px 6px 6px 8px #ff0000;
+  cursor: crosshair;
+}
+
+#result {
+  color: #0dff00;
+  text-shadow: 4px 4px 8px #ff0000;
+  font-size: 2rem;
+}
+

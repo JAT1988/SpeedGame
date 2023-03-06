@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Eater&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Speed Game</title>
+  </head>
+  <body>
+    <h1>Zombie Slayer</h1>
+
+    <h2>Your Kills: <span id="kills">0</span></h2>
+    <div class="start">
+      <button id="startbtn">Start</button>
+      <button id="stopbtn" class="hide">Retreat</button>
+    </div>
+    <div class="overlord_circles">
+      <div class="circle_img" id="circle1"></div>
+
+      <div class="circle_img" id="circle2"></div>
+
+      <div class="circle_img" id="circle3"></div>
+
+      <div class="circle_img" id="circle4"></div>
+    </div>
+
+    <section class="overlay hide">
+      <div class="modal" id="myModal">
+        <h3>GAME OVER you have been bitten</h3>
+        <p id="result"><span id="finalscore">0</span></p>
+        <button class="closebtn">x</button>
+      </div>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>
