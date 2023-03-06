@@ -1,7 +1,7 @@
 Speed game, shoot the zombies.
 
 Game name Zombie slayer. 
-Built using HTML, CSS and Javascript. 
+Built using HTML, CSS and Javascript. Written using esLint version 8. 
 
 Game rules; 
 Start game button starts the game.
